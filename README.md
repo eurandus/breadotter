@@ -1,6 +1,6 @@
 # Germ's Deck
 
-Germaine Chin's one-screen portfolio: three jelly-glossy holographic cards you can tilt and swipe.
+Germaine Chin's one-screen portfolio: three jelly-glossy holographic cards. Hover to tilt them; click one to fly it to the centre for a closer look.
 
 Built with React 18 + Vite. No other dependencies.
 
@@ -15,10 +15,15 @@ All card text and header links live in `src/data.js`.
 | `src/cards/QuestsCard.jsx` | Card 3: hobbies |
 | `src/components/JellyArt.jsx` | The jelly SVG drawings (otter, loop, d20, brush, scroll, flame) |
 | `src/components/JellyDefs.jsx` | The shared gummy-shine filter |
-| `src/components/TiltCard.jsx` | Tilt, foil, swipe and wobble behaviour |
+| `src/components/HoloCard.jsx` | One card: layers, click-to-view, phone tilt, load showcase |
+| `src/lib/useHoloMotion.js` | The spring physics behind tilt, foil, glare and the pop-to-centre view |
+| `src/components/Gallery.jsx` | The three cards, their foil type and glow colour |
+| `src/components/CardBack.jsx` | The card back seen during the first-view spin |
 | `src/styles.css` | All styling |
 
-To add a card, make a new file in `src/cards/`, then add it to the `CARDS` list in `src/components/Deck.jsx` and give it a thumbnail colour (`.t4 i`) in `styles.css`.
+To add a card, make a new file in `src/cards/` and add it to the `CARDS` list in `src/components/Gallery.jsx`. Pick a foil: `prism` (rainbow, best on dark cards), `etched` (light sweep) or `pastel` (soft tint, best on light cards).
+
+The card-viewing behaviour is modelled on simeydotme's pokemon-cards-css, rewritten from scratch in React (that repo is GPL-3.0, so none of its code is copied here).
 
 ## Run it locally
 
