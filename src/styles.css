@@ -176,20 +176,9 @@ main {
 }
 
 /* ---------- card back ---------- */
-.back {
-  width: 100%; height: 100%; padding: 3.2cqw;
-  background: linear-gradient(90deg, #c63c26 0%, #d1662c 30%, #a9a13a 55%, #3f8a3e 78%, #226a35 100%);
-}
-.back__frame {
-  height: 100%; border-radius: 2.4cqw; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4cqw;
-  background:
-    repeating-conic-gradient(from 0deg at 50% 46%, rgba(255, 255, 255, .035) 0 6deg, transparent 6deg 12deg),
-    radial-gradient(circle at 50% 46%, #2f5a4b 0%, #142420 72%);
-  box-shadow: inset 0 0 0 .7cqw rgba(244, 234, 210, .25);
-}
-.back__seal { width: 60cqw; }
-.back__seal svg { width: 100%; height: auto; }
-.back__word { font: 700 10cqw/.9 var(--display); letter-spacing: -.04em; color: #f4ead2; text-shadow: 0 .6cqw 1.4cqw rgba(0, 0, 0, .4); }
+.back { width: 100%; height: 100%; background: #3a0505; }
+.back__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
 
 /* ---------- card faces ---------- */
 .card { position: relative; width: 100%; height: 100%; border-radius: inherit; overflow: hidden; container-type: inline-size; }
