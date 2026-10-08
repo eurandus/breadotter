@@ -1,11 +1,11 @@
 /* Layout: an empty room with three jelly-glossy holo cards in it, a quiet
    uppercase header, and one line of instructions. Click a card to view it. */
 :root {
-  --bg: #faf6f0;   /* page background */
-  --fg: #2b2622;   /* your name, header, card 3 body text */
-  --muted: #7a7c6c;
-  --line: rgba(47, 48, 32, .12);
-  --backdrop: rgba(234, 236, 229, .62);
+  --bg: #faf6f0;
+  --fg: #2b2622;
+  --muted: #847c72;
+  --line: rgba(43, 38, 34, .12);
+  --backdrop: rgba(250, 246, 240, .62);
   --accent: #b8452c;
   /* One family everywhere: Paper Mono (SIL OFL, bundled in src/assets/fonts) */
   --mono: "Paper Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
