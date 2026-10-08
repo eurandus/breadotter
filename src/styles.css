@@ -1,8 +1,8 @@
 /* Layout: an empty room with three jelly-glossy holo cards in it, a quiet
    uppercase header, and one line of instructions. Click a card to view it. */
 :root {
-  --bg: #eaece5;
-  --fg: #2f3020;
+  --bg: #faf6f0;   /* page background */
+  --fg: #2b2622;   /* your name, header, card 3 body text */
   --muted: #7a7c6c;
   --line: rgba(47, 48, 32, .12);
   --backdrop: rgba(234, 236, 229, .62);
